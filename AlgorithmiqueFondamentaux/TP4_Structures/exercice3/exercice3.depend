@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1633682767 source:h:\home\documents\algorithmiquefondamentaux\tp4_structures\exercice3\main.c
+	<stdio.h>
+	<stdlib.h>
+
