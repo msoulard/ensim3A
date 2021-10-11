@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1633685876 source:h:\home\documents\algorithmiquefondamentaux\tp5\exercice3\main.c
+	<stdio.h>
+	<stdlib.h>
+
