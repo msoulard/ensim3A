@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1633963269 source:h:\home\documents\algorithmiquefondamentaux\tp_tris\trisparselection\main.c
+	<stdio.h>
+	<stdlib.h>
+	<errno.h>
+

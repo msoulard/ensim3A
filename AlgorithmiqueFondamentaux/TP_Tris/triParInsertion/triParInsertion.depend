@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1633968180 source:h:\home\documents\algorithmiquefondamentaux\tp_tris\triparinsertion\main.c
+	<stdio.h>
+	<stdlib.h>
+

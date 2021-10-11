@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1633964360 source:h:\home\documents\algorithmiquefondamentaux\tp_tris\triabulles\main.c
+	<stdio.h>
+	<stdlib.h>
+

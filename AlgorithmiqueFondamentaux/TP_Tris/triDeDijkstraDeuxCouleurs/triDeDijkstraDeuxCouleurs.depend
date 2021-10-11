@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1633965522 source:h:\home\documents\algorithmiquefondamentaux\tp_tris\tridedijkstradeuxcouleurs\main.c
+	<stdio.h>
+	<stdlib.h>
+	<errno.h>
+
