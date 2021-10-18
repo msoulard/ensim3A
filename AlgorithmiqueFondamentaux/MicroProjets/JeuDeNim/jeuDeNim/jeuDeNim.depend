@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1634571347 source:h:\home\documents\algorithmiquefondamentaux\microprojets\jeudenim\jeudenim\main.c
+	<stdio.h>
+	<stdlib.h>
+	"jeuNim.h"
+
+1634571347 h:\home\documents\algorithmiquefondamentaux\microprojets\jeudenim\jeudenim\jeunim.h
+
+1161070840 source:h:\home\documents\algorithmiquefondamentaux\microprojets\jeudenim\jeudenim\conio.c
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+	<windows.h>
+	<string.h>
+	"conio.h"
+
+1161070840 h:\home\documents\algorithmiquefondamentaux\microprojets\jeudenim\jeudenim\conio.h
+	<stdio.h>
+
+1634571678 source:h:\home\documents\algorithmiquefondamentaux\microprojets\jeudenim\jeudenim\jeunim.c
+	<stdio.h>
+	<stdlib.h>
+	"jeuNim.h"
+	"conio.h"
+
