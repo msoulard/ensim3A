@@ -1,0 +1,51 @@
+# depslib dependency file v1.0
+1634636615 source:h:\home\documents\algorithmiquefondamentaux\microprojets\jeudenim\jeudenim\main.c
+	<stdio.h>
+	<stdlib.h>
+	"jeuNim.h"
+
+1634636615 h:\home\documents\algorithmiquefondamentaux\microprojets\jeudenim\jeudenim\jeunim.h
+
+1161070840 source:h:\home\documents\algorithmiquefondamentaux\microprojets\jeudenim\jeudenim\conio.c
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+	<windows.h>
+	<string.h>
+	"conio.h"
+
+1161070840 h:\home\documents\algorithmiquefondamentaux\microprojets\jeudenim\jeudenim\conio.h
+	<stdio.h>
+
+1634636774 source:h:\home\documents\algorithmiquefondamentaux\microprojets\jeudenim\jeudenim\jeunim.c
+	<stdio.h>
+	<stdlib.h>
+	"jeuNim.h"
+	"conio.h"
+
+1635263182 source:c:\users\soula\documents\cours\ensim3a\algorithmiquefondamentaux\microprojets\jeudenim\jeudenim\conio.c
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+	<windows.h>
+	<string.h>
+	"conio.h"
+
+1635263182 c:\users\soula\documents\cours\ensim3a\algorithmiquefondamentaux\microprojets\jeudenim\jeudenim\conio.h
+	<stdio.h>
+
+1635528832 source:c:\users\soula\documents\cours\ensim3a\algorithmiquefondamentaux\microprojets\jeudenim\jeudenim\jeunim.c
+	<stdio.h>
+	<stdlib.h>
+	<errno.h>
+	<time.h>
+	"jeuNim.h"
+	"conio.h"
+
+1635263182 c:\users\soula\documents\cours\ensim3a\algorithmiquefondamentaux\microprojets\jeudenim\jeudenim\jeunim.h
+
+1635263182 source:c:\users\soula\documents\cours\ensim3a\algorithmiquefondamentaux\microprojets\jeudenim\jeudenim\main.c
+	<stdio.h>
+	<stdlib.h>
+	"jeuNim.h"
+
