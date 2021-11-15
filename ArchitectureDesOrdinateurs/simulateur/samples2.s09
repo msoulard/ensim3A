@@ -1,0 +1,31 @@
+* 	SAMPLES2.S09
+*	subroutine call
+
+		* Début d'enregistrement du fichier
+		ORG	$C000
+		* Initialiser le pointeur de pile
+		LDS	#$100
+		* Appel de la fonction Add2toA		
+boucle	BSR	Add2toA
+		* Boucle inconditionnelle qui permet de boucler en permanence		
+		BRA	boucle			
+	
+* Déclaration du sous-programme Add2toA
+Add2toA
+	* Ajouter 3 en héxadécimal à la valeur de A	
+	ADDA	#$3
+	* Appel de la fonction Sub2toA
+	BSR Sub2toA
+	* Envoyer le contenu de l'accumulateur de A dans la pile (empiler)
+	PSHS A
+	* Récupérer le contenu de l'accumulateur de A dans la pile (dépiler)
+	PULS A
+	* Indication de fin du sous-programme
+	RTS
+
+* Déclaration du sous-programme Sub2toA
+Sub2toA
+	* Soustraire 2 en héxadécimal à la valeur de A
+	SUBA #$2
+	* Indication de fin du sous-programme
+	RTS

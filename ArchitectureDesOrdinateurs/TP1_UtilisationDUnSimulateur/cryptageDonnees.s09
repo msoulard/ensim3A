@@ -1,0 +1,28 @@
+	ORG $C000
+	LDX #$1100
+	LDY #$1200
+	LDA ,X
+	LDB ,X
+bcl	CMPA #$FF
+	BEQ Fin
+	ANDA #$F0
+	ANDB #$0F
+	LSRA
+	LSRA
+	LSRA
+	LSRA
+	LSRB
+	LSRB
+	LSRB
+	LSRB
+	STB $100
+	ADDA $100
+	STA ,Y
+	LEAX 1,X
+	LEAY 1,Y
+	LDA ,X
+	LDB ,X
+	BRA bcl
+Fin	BEQ
+
+

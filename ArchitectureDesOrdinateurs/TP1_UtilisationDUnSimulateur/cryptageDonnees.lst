@@ -1,0 +1,38 @@
+MC6809 Assembler, Copyright (C) GMV 1989-1998
+File: cryptageDonnees.lst
+C000                  1. 	ORG $C000
+C000 8E 11 00         2. 	LDX #$1100
+C003 10 8E 12 00      3. 	LDY #$1200
+C007 A6 84            4. 	LDA ,X
+C009 E6 84            5. 	LDB ,X
+C00B 81 FF            6. bcl	CMPA #$FF
+C00D 27 22            7. 	BEQ Fin
+C00F 84 F0            8. 	ANDA #$F0
+C011 C4 0F            9. 	ANDB #$0F
+C013 44              10. 	LSRA
+C014 44              11. 	LSRA
+C015 44              12. 	LSRA
+C016 44              13. 	LSRA
+C017 54              14. 	LSRB
+C018 54              15. 	LSRB
+C019 54              16. 	LSRB
+C01A 54              17. 	LSRB
+C01B F7 01 00        18. 	STB $100
+C01E BB 01 00        19. 	ADDA $100
+C021 A7 A4           20. 	STA ,Y
+C023 30 89 00 01     21. 	LEAX 1,X
+C027 31 A9 00 01     22. 	LEAY 1,Y
+C02B A6 84           23. 	LDA ,X
+C02D E6 84           24. 	LDB ,X
+C02F 20 DA           25. 	BRA bcl
+"H:\Home\Documents\ArchitectureDesOrdinateurs\TP1_UtilisationDUnSimulateur\cryptageDonnees.s09" line 26, ERROR: Bad operand syntax
+C031                 26. Fin	BEQ
+                     27. 
+                     28. 
+
+--	SYMBOL TABLE:
+--	VALUE	SYMBOL 
+	C031	Fin
+	C00B	bcl
+
+****** Total Errors: 1

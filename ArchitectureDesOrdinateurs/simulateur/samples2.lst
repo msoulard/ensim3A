@@ -1,0 +1,23 @@
+MC6809 Assembler, Copyright (C) GMV 1989-1998
+File: samples2.lst
+                      1. * 	SAMPLES2.S09
+                      2. *	subroutine call
+                      3. 
+C000                  4. 		ORG	$C000
+C000 10 CE 01 00      5. 		LDS	#$100		must have a valid stack
+C004 8D 02            6. boucle	BSR	Add2toA		call subroutine
+C006 20 FC            7. 		BRA	boucle			.. do nothing...
+                      8. 	
+                      9. 
+C008 8B 03           10. Add2toA	ADDA	#3
+C00A 8D 01           11. 		BSR Sub2toA
+C00C 39              12. 	RTS
+                     13. 
+C00D 80 02           14. Sub2toA	SUBA #$2
+C00F 39              15. 	RTS
+
+--	SYMBOL TABLE:
+--	VALUE	SYMBOL 
+	C008	Add2toA
+	C004	boucle
+	C00D	Sub2toA
