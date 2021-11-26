@@ -1,0 +1,37 @@
+MC6809 Assembler, Copyright (C) GMV 1989-1998
+File: generationBitPartie.lst
+1100                  1. 	ORG	$1100
+1100 5F 05 6C 9F 00   2. msg	FCB	$5F,$5,$6C,$9F,$0
+1110                  3. 	ORG	$1110
+1110 00               4. msgresul	FCB	$0
+C000                  5. 	ORG	$C000
+C000 8E 11 00         6. 	LDX	#msg
+C003 10 8E 11 10      7. 	LDY	#msgresul
+C007 A6 84            8. bcl4	LDA	,X
+C009 81 00            9. 	CMPA	#$00
+C00B 27 19           10. 	BEQ	bcl1
+C00D A7 A4           11. 	STA	,Y
+C00F 5F              12. 	CLRB
+C010 44              13. bcl3	LSRA
+C011 24 01           14. 	BCC	bcl2
+C013 5C              15. 	INCB
+C014 81 00           16. bcl2	CMPA	#$00
+C016 26 F8           17. 	BNE	bcl3
+C018 C4 01           18. 	ANDB	#$1
+C01A 31 A9 00 01     19. 	LEAY	1,Y
+C01E E7 A0           20. 	STB	,Y+
+C020 30 89 00 01     21. 	LEAX	1,X
+C024 20 E1           22. 	BRA	bcl4
+C026 31 A9 00 01     23. bcl1	LEAY	1,Y
+C02A 5F              24. 	CLRB
+C02B E7 A4           25. 	STB	,Y
+C02D                 26. 	END
+
+--	SYMBOL TABLE:
+--	VALUE	SYMBOL 
+	1100	msg
+	C026	bcl1
+	C014	bcl2
+	C010	bcl3
+	C007	bcl4
+	1110	msgresul

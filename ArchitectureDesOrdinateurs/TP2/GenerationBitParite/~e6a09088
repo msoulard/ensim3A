@@ -1,0 +1,41 @@
+MC6809 Assembler, Copyright (C) GMV 1989-1998
+File: generationBitPartie.lst
+1100                  1. 	ORG	$1100
+1100 5F 05 6C 9F      2. msg	FCB	$5F,$5,$6C,$9F
+1104 00               3. msgresul	FCB	$0
+C000                  4. 	ORG	$C000
+C000 8E 11 00         5. 	LDX	#msg
+C003 10 8E 11 04      6. 	LDY	#msgresul
+"H:\Home\Documents\ArchitectureDesOrdinateurs\TP2\GenerationBitParite\generationBitPartie.s09" line 7, ERROR: Multiple definition
+C007 A6 84            7. bcl4	LDA	,X
+C009 81 00            8. 	CMPA	#$00
+"H:\Home\Documents\ArchitectureDesOrdinateurs\TP2\GenerationBitParite\generationBitPartie.s09" line 9, ERROR: Undefined symbol: 'bcl1'
+C00B 27 F3            9. 	BEQ	bcl1
+C00D A7 A4           10. 	STA	,Y
+C00F 5F              11. 	CLRB
+C010 44              12. bcl3	LSRA
+C011 24 01           13. 	BCC	bcl2
+C013 5C              14. 	INCB
+C014 81 00           15. bcl2	CMPA	#$00
+C016 26 F8           16. 	BNE	bcl3
+C018 C4 01           17. 	ANDB	#$1
+C01A 31 A9 00 01     18. 	LEAY	1,Y
+C01E E7 A4           19. 	STB	,Y
+C020 30 89 00 01     20. 	LEAX	1,X
+C024 20 E1           21. 	BRA	bcl4
+"H:\Home\Documents\ArchitectureDesOrdinateurs\TP2\GenerationBitParite\generationBitPartie.s09" line 22, ERROR: Multiple definition
+C026 31 A9 00 01     22. bcl4	LEAY	1,Y
+C02A 5F              23. 	CLRB
+C02B E7 A4           24. 	STB	,Y
+C02D                 25. 	END
+
+--	SYMBOL TABLE:
+--	VALUE	SYMBOL 
+	1100	msg
+	0000	bcl1
+	C014	bcl2
+	C010	bcl3
+	C007	bcl4
+	1104	msgresul
+
+****** Total Errors: 3

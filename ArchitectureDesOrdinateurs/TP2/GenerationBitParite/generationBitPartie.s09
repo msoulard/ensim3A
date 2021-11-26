@@ -1,0 +1,26 @@
+	ORG	$1100
+msg	FCB	$5F,$5,$6C,$9F,$0
+	ORG	$1110
+msgresul	FCB	$0
+	ORG	$C000
+	LDX	#msg
+	LDY	#msgresul
+bcl4	LDA	,X
+	CMPA	#$00
+	BEQ	bcl1
+	STA	,Y
+	CLRB
+bcl3	LSRA
+	BCC	bcl2
+	INCB
+bcl2	CMPA	#$00
+	BNE	bcl3
+	ANDB	#$1
+	LEAY	1,Y
+	STB	,Y+
+	LEAX	1,X
+	BRA	bcl4
+bcl1	LEAY	1,Y
+	CLRB
+	STB	,Y
+	END
