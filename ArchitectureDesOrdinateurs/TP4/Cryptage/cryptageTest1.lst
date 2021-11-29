@@ -1,0 +1,29 @@
+MC6809 Assembler, Copyright (C) GMV 1989-1998
+File: cryptageTest1.lst
+1100                  1. 	ORG	$1100
+1100 E2 FF            2. msg	FCB	$E2,$FF
+                      3. 
+C000                  4. 	ORG	$C000
+C000 8E 11 00         5. 	LDX	#msg
+C003 10 8E 12 00      6. 	LDY	#$1200
+C007 A6 84            7. bcl1	LDA	,X
+C009 81 FF            8. 	CMPA	#$FF
+C00B 27 13            9. 	BEQ	bcl2
+C00D 49              10. 	ROLA
+C00E 49              11. 	ROLA
+C00F 88 01           12. 	EORA	#$1
+C011 88 08           13. 	EORA	#$8
+C013 88 20           14. 	EORA	#$20
+C015 88 80           15. 	EORA	#$80
+C017 4C              16. 	INCA
+C018 A7 A0           17. 	STA	,Y+
+C01A 30 89 00 01     18. 	LEAX	1,X
+C01E 20 E7           19. 	BRA	bcl1
+C020 A7 A4           20. bcl2	STA	,Y
+C022                 21. 	END
+
+--	SYMBOL TABLE:
+--	VALUE	SYMBOL 
+	1100	msg
+	C007	bcl1
+	C020	bcl2

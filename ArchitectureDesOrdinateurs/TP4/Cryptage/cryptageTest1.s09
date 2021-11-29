@@ -1,0 +1,21 @@
+	ORG	$1100
+msg	FCB	$E2,$FF
+
+	ORG	$C000
+	LDX	#msg
+	LDY	#$1200
+bcl1	LDA	,X
+	CMPA	#$FF
+	BEQ	bcl2
+	ROLA
+	ROLA
+	EORA	#$1
+	EORA	#$8
+	EORA	#$20
+	EORA	#$80
+	INCA
+	STA	,Y+
+	LEAX	1,X
+	BRA	bcl1
+bcl2	STA	,Y
+	END
