@@ -1,0 +1,60 @@
+MC6809 Assembler, Copyright (C) GMV 1989-1998
+File: trisSansInterruption.lst
+1500                  1. 	org	$1500
+1500 00               2. tris	fcb	$0
+                      3. 
+1400                  4. 	org	$1400
+1400 10 0A 03 FF 01   5. data	fcb	$10,$A,$3,$FF,$1
+     0005             6. n	equ	5
+                      7. 
+C000                  8. 	org	$C000
+C000 8E 15 00         9. 	ldx	#tris
+C003 BC 00 00        10. 	cmpx	$0
+C006 8E C0 0B        11. 	ldx	#selection
+C009 27 24           12. 	beq	bulles
+                     13. 
+C00B                 14. selection:
+C00B 8E 14 00        15. 	ldx	#data
+C00E 31 89 00 01     16. bcl3	leay	1,x
+C012 A6 84           17. bcl2	lda	,x
+C014 25 06           18. 	blo	bcl1
+C016 E6 A4           19. 	ldb	,y
+C018 A7 A4           20. 	sta	,y
+C01A E7 84           21. 	stb	,x
+C01C 31 A9 00 01     22. bcl1	leay	1,y
+C020 10 8C 14 05     23. 	cmpy	#data+n
+C024 26 EC           24. 	bne	bcl2
+C026 30 89 00 01     25. 	leax	1,x
+C02A 8C 14 04        26. 	cmpx	#data+n-1
+C02D 25 DF           27. 	blo	bcl3
+                     28. 	
+                     29. 
+C02F                 30. bulles:
+C02F 8E 14 00        31. 	ldx	#data
+C032 31 89 00 01     32. bclC	leay	1,x
+C036 A6 84           33. bclB	lda	,x
+C038 25 06           34. 	blo	bclA
+C03A E6 A4           35. 	ldb	,y
+C03C A7 A4           36. 	sta	,y
+C03E E7 84           37. 	stb	,x
+C040 31 A9 00 01     38. bclA	leay	1,y
+C044 10 8C 14 05     39. 	cmpy	#data+n
+C048 26 EC           40. 	bne	bclB
+C04A 30 89 00 01     41. 	leax	1,x
+C04E 8C 14 04        42. 	cmpx	#data+n-1
+C051 25 DF           43. 	blo	bclC
+C053 3B              44. 	rti
+
+--	SYMBOL TABLE:
+--	VALUE	SYMBOL 
+	C01C	bcl1
+	C012	bcl2
+	C00E	bcl3
+	0005	n
+	C040	bclA
+	C036	bclB
+	C032	bclC
+	C02F	bulles
+	1400	data
+	1500	tris
+	C00B	selection

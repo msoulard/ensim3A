@@ -1,0 +1,43 @@
+	org	$1500
+tris	fcb	$0
+
+	org	$1400
+data	fcb	$10,$A,$3,$FF,$1
+n	equ	5
+
+	org	$C000
+	ldx	#tris
+	cmpx	$0
+	ldx	#selection
+	beq	bulles
+
+selection:
+	ldx	#data
+bcl3	leay	1,x
+bcl2	lda	,x
+	blo	bcl1
+	ldb	,y
+	sta	,y
+	stb	,x
+bcl1	leay	1,y
+	cmpy	#data+n
+	bne	bcl2
+	leax	1,x
+	cmpx	#data+n-1
+	blo	bcl3
+
+bulles:
+	ldx	#data
+bclC	leay	1,x
+bclB	lda	,x
+	blo	bclA
+	ldb	,y
+	sta	,y
+	stb	,x
+bclA	leay	1,y
+	cmpy	#data+n
+	bne	bclB
+	leax	1,x
+	cmpx	#data+n-1
+	blo	bclC
+	rti
