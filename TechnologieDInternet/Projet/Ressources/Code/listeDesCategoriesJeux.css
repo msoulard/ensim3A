@@ -1,0 +1,250 @@
+#menu{
+	position: absolute;
+	width: 1440px;
+	height: 142px;
+	left: 0px;
+	top: 0px;
+	background: #08BBB0;
+} 
+
+#nomLudotheque{
+position: absolute;
+width: 1440px;
+height: 40px;
+left: 0px;
+top: 0px;
+
+font-family: Schoolbell;
+font-style: normal;
+font-weight: normal;
+font-size: 40px;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+button.boutonsMenu{
+	position: absolute;
+	width: 217px;
+	height: 56px;
+	background: #0077A9;
+	color: white;
+	border-color: #0077A9;
+	border-radius: 10px;
+	font-family: Schoolbell;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 26px;
+	line-height: 36px;
+}
+#buttonAccueil{	
+	left: 122px;
+	top: 86px;
+}
+
+#buttonJeux{
+	left: 524px;
+	top: 86px;
+}
+
+#buttonCompte{
+	left: 926px;
+	top: 86px;
+}
+
+#recherche{
+	position: absolute;
+	width: 181px;
+	height: 30px;
+	left: 1225px;
+	top: 99px;
+
+	background: #08BBB0;	
+	border: 3px solid #C4C4C4;
+	box-sizing: border-box;
+	backdrop-filter: blur(4px);
+	border-radius: 10px;
+	color: #f2f2f2;
+}
+
+#imageRecherche{
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	left: 1375px;
+	top: 102px;
+}
+
+#piedDePage{
+	position: absolute;
+	width: 1440px;
+	height: 91px;
+	left: 0px;
+	top: 846px;
+	background: #08BBB0;
+}
+
+#adresse{
+position: absolute;
+width: 270px;
+height: 83px;
+left: 59px;
+top: 0px;
+
+font-family: Schoolbell;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+#contact{
+position: absolute;
+width: 512px;
+height: 91px;
+left: 732px;
+top: 0px;
+
+font-family: Schoolbell;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+#titre{
+	position: absolute;
+	width: 598px;
+	height: 61px;
+	left: 421px;
+	top: 125px;
+
+	font-family: Schoolbell;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 50px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	text-decoration-line: underline;
+
+	color: #0300A9;
+}
+
+ul.listeCategories{
+	position: absolute;
+	width: 611px;
+	height: 63px;
+	left: 24px;
+
+	font-family: Schoolbell;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 26px;
+	line-height: 36px;
+	align-items: center;
+
+	color: #000000;
+}
+
+#liAge{
+	top: 230px;
+}
+
+#liActivite{
+	top:380px;
+}
+
+#liType{
+	top:520px;
+}
+
+button.categoriesJeux{
+	position: absolute;
+	width: 217px;
+	height: 56px;
+
+	background: #6DCEED;
+	border-radius: 10px;
+	
+	font-family: Schoolbell;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 26px;
+	line-height: 36px;
+
+	color: #000000;
+}
+
+#buttonBambin{
+	left: 53px;
+	top: 50px;
+}
+
+#buttonEnfant{
+	left: 316px;
+	top: 50px;
+}
+
+#buttonAdolescent{
+	left: 579px;
+	top: 50px;
+}
+
+#buttonAdulte{
+	left: 842px;
+	top: 50px;
+}
+
+#buttonTouteLaFamille{
+	left: 1105px;
+	top: 50px;
+}
+
+#buttonCalme{
+	left: 53px;
+	top: 50px;
+}
+
+#buttonDynamique{
+	left: 316px;
+	top: 50px;	
+}
+#buttonLudique{
+	left: 53px;
+	top: 50px;
+}
+#buttonPlateau{
+	left: 316px;
+	top: 50px;
+}
+
+#buttonCartes{
+	left: 579px;
+	top: 50px;
+}
+
+#buttonCulturel{
+	left: 842px;
+	top: 50px;
+}
+
+#buttonFiction{
+	left: 1105px;
+	top: 50px;
+}
+
+#buttonJeuxVideos{
+	left: 53px;
+	top: 120px;
+}
+
+#buttonTousLesJeux{
+	left: 579px;
+	top: 750px;
+}
