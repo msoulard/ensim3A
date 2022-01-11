@@ -1,0 +1,183 @@
+div.menu{
+    position: absolute;
+    height: 145px;
+    left: 0px;
+    top: 0px;
+    background: #08BBB0;
+} 
+h1.nomLudotheque{
+    width: 100vw;
+    height: 35px;
+    left: 0px;
+    top: 0px;
+
+    font-family: Schoolbell;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+button.buttonAccueil{
+    position: absolute;
+	width: 217px;
+	height: 56px;
+	background: #0077A9;
+	color: white;
+	border-color: #0077A9;
+	border-radius: 10px;
+	font-family: Schoolbell;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 26px;
+	line-height: 36px;
+	left: 15vw;
+	top: 86px;
+}
+
+button.buttonJeux{
+    position: absolute;
+	width: 217px;
+	height: 56px;
+	background: #0077A9;
+	color: white;
+	border-color: #0077A9;
+	border-radius: 10px;
+	font-family: Schoolbell;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 26px;
+	line-height: 36px;
+	left: 40vw;
+	top: 86px;
+}
+
+button.buttonCompte{
+    position: absolute;
+	width: 217px;
+	height: 56px;
+	background: #0077A9;
+	color: white;
+	border-color: #0077A9;
+	border-radius: 10px;
+	font-family: Schoolbell;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 26px;
+	line-height: 36px;
+	left: 65vw;
+	top: 86px;
+}
+
+input.recherche{
+    position: absolute;
+	width: 181px;
+	height: 30px;
+	left: 90vw;
+	top: 99px;
+
+	background: #08BBB0;	
+	border: 3px solid #C4C4C4;
+	box-sizing: border-box;
+	backdrop-filter: blur(4px);
+	border-radius: 10px;
+	color: #f2f2f2;
+}
+
+img.imageRecherche{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 98vw;
+    top: 102px;
+}
+
+footer.piedDePage{
+    position: absolute;
+    width: 100vw;
+    height: 112px;
+    left: 0px;
+    top: 88vh;
+    background: #08BBB0;
+}
+
+p.textAdresse{
+    position: absolute;
+    width: 50vw;
+    height: 83px;
+    left: 0px;
+
+    font-family: Schoolbell;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+p.textContact{
+    position: absolute;
+    width: 50vw;
+    height: 83px;
+    left: 50vw;
+
+    font-family: Schoolbell;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+div.corps{
+    position: absolute;
+    left: 0px;
+    top: 146px;
+}
+
+h2.titre{
+    position: absolute;
+    width: 500px;
+    height: 61px;
+    left: 35vw;
+    top: 5vh;
+
+    font-family: Schoolbell;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration-line: underline;
+
+    color: #0300A9;
+}
+
+p.textDescription{
+    position: absolute;
+    width: 100vw;
+    height: 104px;
+    left: 37px;
+    top: 0vh;
+
+    font-family: Schoolbell;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 33px;
+    color: #000000;
+}
+
+img.imageJeux{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    left: 87px;
+    top: 50vh;
+}
